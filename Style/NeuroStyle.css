@@ -1,0 +1,187 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.header{ grid-area: header; }
+.slider{ grid-area: slider; }
+.content{ grid-area: content; }
+.footer{ grid-area: footer; }
+
+.grid-page{
+    display: grid;
+    grid-template-areas: 
+        'header header header header header header'
+        'slider slider slider slider slider slider'
+        'content content content content content content'
+        'footer footer footer footer footer footer';
+}
+
+.grid-page > div{
+    border: 0px solid;
+}
+
+.header{
+    background-image: url(../Multimedia/Imagenes/Background_header_12.jpg);
+    background-size: 100%;
+    box-sizing: border-box;
+}
+
+.header ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    float: right;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+.menu-link{
+    width: 160px;
+    list-style: none;
+    padding: 0;
+    margin-top: 80px;
+    margin-right: -20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+    float: right;
+}
+
+.menu-link:hover{
+    color: grey;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+}
+
+
+.Logo1{
+    float: left;
+    padding-top: 11px;
+    padding-left: 2%;
+}
+
+.Bloquetitulo1{
+    float: left;
+    padding-top: 10px;
+    padding-left: 2%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #000000;
+    font-size: 25px;
+}       
+
+.content-slider{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    justify-content: center;
+    align-content: flex-end;
+    position: relative;
+}
+
+.content-slider img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 97.50%;
+    height: 100%;
+    opacity: 0;
+}
+
+.content-slider input[type="radio"]{
+    position: relative;
+    z-index: 100;
+    margin: 10px;
+}
+
+.content-slider input[type="radio"]:checked ~ img{
+    opacity: 1;
+}
+
+
+.ContentNeuro1{
+    display: flex;
+    background-color: #f2f5f7;   
+}
+
+.TituloNeuro1{
+    padding: 0;
+    margin-left: 10px;
+    list-style: none;
+    display: flex;
+    float: right;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px; 
+}
+
+.ImagenNeuro1{
+    padding-top: 70px;
+    margin-left: -90px;
+    margin-bottom: 60px;
+}
+
+.ParrafoNeuro1{
+    padding-top: 100px;
+    margin-left: 30px;  
+    margin-right: -10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;  
+}
+
+.ContentNeuro2{
+    display: flex;
+    background-color: #f2f5f7;
+}
+
+.ParrafoNeuro2{
+    padding-top: 80px;
+    margin-left: 30px;  
+    margin-right: -10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;   
+}
+
+.ImagenNeuro2{
+    padding-top: 60px;
+    margin-left: 80px;
+    margin-bottom: 60px;
+}
+
+.VideoNeuro2{
+    margin-left: 40px;
+    padding-top: -50px;
+}
+
+.footer{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.Firma{
+    padding: 0px;
+    margin-left: 30px;
+    margin-top:  -10px;
+    font-size: 20px;
+}
+
+.mensaje{
+    padding: 0;
+    margin-left: 290px;
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+.Formulario1{
+    padding: 0px;
+    margin-top: 40px;
+    margin-left: -380px;
+}
+
+.incono{
+    padding: 0px;
+    margin-left: 780px;
+    margin-top: -50px;
+    margin-bottom: 10px;
+}
